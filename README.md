@@ -11,8 +11,8 @@ The program is divided into two programs:
                              
 2. cam_scanner.py
    The image is first preprocessed 
-   a. resized according to image ratio
-   b. converted to grayscale
-   c. remove noise bu gaussian blur
-   d. Edges of the contours (canny)
+   (a) resized according to image ratio
+   (b) converted to grayscale
+   (c) remove noise bu gaussian blur
+   (d) Edges of the contours (canny)
    The edged copy is subjected find contours function which provides all the contours. Those contours are sorted according the contour area and the largest contour coordinates are applied to top_view.py. The contour is reshaped and multiplied by the ratio as edge detection and contour detection are performed on resized image whereas top_view of document is done on the original image.
